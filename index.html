@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Integrated Smart Irrigation and Plant Health Monitoring System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Integrated Smart Irrigation and Plant Health Monitoring System</h1>
+        <p class="description">
+            Hi! I'm Rohit Arun. Welcome to the real-time monitoring dashboard!  
+            The soil moisture levels of your plant will automatically update over time, providing live insights to help ensure healthy growth.
+        </p>
+
+        <div class="chart-card">
+            <h2>🌱 Soil Moisture vs Time</h2>
+            <h3 id="dateDisplay" style="margin-bottom: 20px;"></h3>
+            <canvas id="moistureChart" width="800" height="400"></canvas>
+        </div>
+
+        <div class = "confusion">
+            <h2>📊 Confusion Matrix of the Machine Learning Model</h2>
+            <img src="{{ url_for('static', filename='confusion_matrix.png') }}" alt="Confusion Matrix">
+        </div>
+        
+    </div>
+
+    
+
+    
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
